@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class SistemaEscolar {
+    public static void main(String[] args) {
+
+        
+        Scanner entrada = new Scanner(System.in);
+
+            double n1, n2, n3, n4, n5, n6, n7, n8;
+
+            System.out.print("Digite a nota 1: ");
+            n1 = entrada.nextDouble();
+            System.out.print("Digite a nota 2: ");
+            n2 = entrada.nextDouble();
+            System.out.print("Digite a nota 3: ");
+            n3 = entrada.nextDouble();
+            System.out.print("Digite a nota 4: ");
+            n4 = entrada.nextDouble();
+            System.out.print("Digite a nota 5: ");
+            n5 = entrada.nextDouble();
+            System.out.print("Digite a nota 6: ");
+            n6 = entrada.nextDouble();
+            System.out.print("Digite a nota 7: ");
+            n7 = entrada.nextDouble();
+            System.out.print("Digite a nota 8: ");
+            n8 = entrada.nextDouble();
+
+            double b1 = (n1 + n2) / 2;
+            double b2 = (n3 + n4) / 2;
+            double b3 = (n5 + n6) / 2;
+            double b4 = (n7 + n8) / 2;
+
+            double s1 = (b1 + b2) / 2;
+            double s2 = (b3 + b4) / 2;
+
+            double mediaFinal = (s1 + s2) / 2;
+
+            System.out.println("\n1º Bimestre: " + b1);
+            System.out.println("2º Bimestre: " + b2);
+            System.out.println("1º Semestre: " + s1);
+            System.out.println("3º Bimestre: " + b3);
+            System.out.println("4º Bimestre: " + b4);
+            System.out.println("2º Semestre: " + s2);
+            System.out.println("Média Final: " + mediaFinal);
+       
+            entrada.close();
+        }  
+    }
+
